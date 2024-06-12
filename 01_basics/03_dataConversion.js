@@ -35,3 +35,16 @@ let stringNumber=String(someNumber);
 
 console.log(typeof stringNumber);
 console.log(stringNumber);
+
+  //some operations
+  console.log("1"+2);
+  console.log("1"+2+2 );   //so the conversion is done according to the first
+                          // data type
+  console.log(1+2+"2");
+
+  //some tricky conversion
+  console.log(+true); //1  so + is used in front to convert a data type into number data type
+//   console.log(true+); //error
+
+
+//study prefix and postfix operator from documentation
