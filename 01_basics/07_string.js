@@ -5,7 +5,7 @@ const repoCount=3
 
 console.log(`Hello my name is ${name} and my repoCount is ${repoCount}`);
 
-const gameName=new String(" Tanmay-Rome ")
+const gameName=new String(" Tanmay-Rome ")  //it guarantees that the variable is of string data type
 console.log(gameName[0]);
 console.log(gameName._proto_);
 console.log(gameName.length);
