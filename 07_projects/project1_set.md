@@ -5,7 +5,9 @@
 #projects related to changing the background color
 #on clicking the button of desired color
 
-<!-- const buttons=document.querySelectorAll('.button')
+```javascript 
+  
+const buttons=document.querySelectorAll('.button')
 
 
 console.log(buttons)
@@ -38,4 +40,4 @@ buttons.forEach((button)=>
 
   })
 })
- -->
+
