@@ -24,8 +24,8 @@ let myCreatedDate4=new Date("01-13-2024")
 console.log(myCreatedDate4.toLocaleString());
 
 //time stamp can be used in quizzes 
-let myTimeStamp=Date.now();
-console.log(myTimeStamp);
+let myTimeStamp=Date.now(); 
+console.log(myTimeStamp);    //output milliseconds from 1970
 console.log(myCreatedDate.getTime());
 console.log(Math.floor(Date.now()/1000));  //convert ms into seconds
 
@@ -37,7 +37,7 @@ console.log(newDate.getMonth()+1); // gives month starting from 0 so i have adde
 console.log(newDate.getDay());// gives day of week as it it saturday today so outputs 6
 console.log(newDate.getDate());  //gives date of month
 
-newDate.toLocaleString('default',  //default here represents interalnationalization 
+newDate.toLocaleString('default',  //default here represents internationalization 
     {                        
         weekday:"long",  //using ctrl+space we can get suggestiion of more properties as date is object so we have many properties
 
