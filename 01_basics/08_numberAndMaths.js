@@ -1,4 +1,4 @@
-const score=400
+const score=40000
 console.log(score.toLocaleString());
 
 const balance=new Number(100)  //defining in this way specifies that the variable is of Number data type
