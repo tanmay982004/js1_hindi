@@ -8,11 +8,11 @@ const user={
     }
 }
 
-// user.welcomeMessage()
+user.welcomeMessage()
 // user.username="Ram"
 // user.welcomeMessage()
 
-console.log(this);  //it gives here empty paranthesis
+console.log(this);  //it gives here empty paranthesis which is node current context
                     //in browser we get window which is a global object
  
  //this inside function
@@ -31,18 +31,22 @@ console.log(this);  //it gives here empty paranthesis
  const chai=function ()
  {
     let username="Tanmay"
-    console.log(this);
- }
+    console.log(this.username);  //undefined
+    console.log(this);   
+   // ✅ global object (window in browser, global in Node.js) 
+}
+
 
  const chai1=()=>
  {
     let username="Tanmay"
     console.log(this); //empty paranthesis
     console.log(this.username);  //undefined 
- }
+// ✅ empty `{}` in Node.js, `window` in browser
+}
 
-//  chai()
-// chai1()
+ chai()
+chai1()
 
 /*
 const addTwo=(num1,num2)=>{
