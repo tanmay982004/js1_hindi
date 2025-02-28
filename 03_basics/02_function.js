@@ -2,8 +2,8 @@
 //which we can do in this way
  
 
-function calculateCarPrice(...num1){
-  return num1
+function calculateCarPrice(...num1){  //here ... is rest operator we can also use  val1,val2,...num
+  return num1                      //val1=200, val2=300
 }
 console.log(calculateCarPrice(200,300,400,5000));   //function gives us array of these elements
 

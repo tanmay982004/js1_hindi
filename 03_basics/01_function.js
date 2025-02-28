@@ -27,5 +27,5 @@ function loginUserMessage(username="Ram") //we can provide username here in case
     return  `${username} just logged in`
 }
 
-console.log(loginUserMessage()); //if we don't pass anything it wil give us undefined
+console.log(loginUserMessage()); //if we don't pass anything it wil give us undefined 
            
