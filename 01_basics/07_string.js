@@ -3,11 +3,11 @@
 const name="Tanmay"
 const repoCount=3
 
-console.log(`Hello my name is ${name} and my repoCount is ${repoCount}`);
+console.log(`Hello my name is ${name} and my repoCount is ${repoCount}`); //string interpolation by placing variable in placeholder
 
 const gameName=new String(" Tanmay-Rome ")  //it guarantees that the variable is of string data type
 console.log(gameName[0]);
-console.log(gameName._proto_);
+console.log(gameName.__proto__);
 console.log(gameName.length);
 console.log(gameName.toUpperCase());
 console.log(gameName.toLowerCase());
@@ -19,7 +19,7 @@ console.log(gameName.trim());  //read trim from mdn documentation -starttrim() a
 const newString=gameName.substring(0,4)
 console.log(newString); //substring ignores negative value
 
-const anotherString=gameName.slice(-9,4)
+const anotherString=gameName.slice(-9,4) // here negative starts fromm last
 console.log(anotherString);
 
 const url="https://tanmay%30kumar"
