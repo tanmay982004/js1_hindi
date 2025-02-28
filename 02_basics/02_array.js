@@ -1,6 +1,6 @@
 const arr1=[1,2,3]
 const arr2=[4,5,6]
-// console.log(arr1.push(arr2));//adds elements to the end of existing array
+// console.log(arr1.push(arr2));//adds elements to the end of existing array arr1[3]=arr2;
 
 // const arr3=arr1.concat(arr2)   //combines two or more arrays and and returns a new array without modifying existing array 
 // console.log(arr3);
@@ -15,9 +15,16 @@ console.log(arr6);
 
 //another array methods
 console.log(Array.isArray("Tanmay"));
-console.log(Array.from("Tanmay")); //converts array to string
+console.log(Array.from("Tanmay")); //converts string to array
 console.log(Array.from({name:"Tanmay"}));  //here we have to specifically mention that from object or key of which we want to make array
-       //from methods returns an empty array if it is not possible to convert it into array
+console.log(Array.from(Object.values({ name: "Tanmay" })));  
+console.log(Array.from(Object.keys({ name: "Tanmay" })));  
+// Output: ["Tanmay"]
+
+// Output: ["Tanmay"]
+       
+
+//from methods returns an empty array if it is not possible to convert it into array
 
 let score1=10;
 let score2=20;
