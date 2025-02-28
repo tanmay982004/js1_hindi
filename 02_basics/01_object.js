@@ -10,7 +10,7 @@ const JsUser={
 
     "name":"Tanmay",  //here key value is treated as string
      "full name":"Tanmay Kumar",
-    [mySym]:"key1",
+    [mySym]:"key1", //to use symbol as key we have to use square brackets only otherwise key will be string
 
     age:18,
     location:"Patna",
@@ -62,8 +62,10 @@ JsUser.greeting=function()
 
 JsUser.greetingTwo=function()
 {
-    console.log(`Hello Js user ${this["full name"]}`);  //if the key is normal then we can access it using this.name like thsi
+    console.log(`Hello Js user ${this["full name"]}`);  //if the key is normal then we can access it using this.name here this is referring to current object
 }
 
-console.log(JsUser.greeting());
+console.log(JsUser.greeting());  //it gives undefined alognwith greeting as it doesn'
+// t return anything if we don't want undefined as output then we should directly call function instead of console.log or we can return message directly instead of using
+// console inside greeting function
 console.log(JsUser.greetingTwo());
